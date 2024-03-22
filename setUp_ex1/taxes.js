@@ -44,7 +44,7 @@ function remove(arr, val) {
 //   }
 // }
 
-const userNames = []; //passthru result in array form
+let userNames = []; //passthru result in array form
 
 let nameInput = document.getElementById("userName"); //select input from userName submission
 

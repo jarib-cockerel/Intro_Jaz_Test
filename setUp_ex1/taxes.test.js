@@ -58,11 +58,14 @@ describe("Remove Duplicates", function () {
 // describe a group of related test in the same namespace
 describe("subform() test", () => {
   it("should input val to usernames array", () => {
+    nameInput.value = "Jarib";
     subForm();
     // expect(userName.length).toBe(1); //failure but will show in Jasmine js:59:29 the error
     expect(userNames.length).toBe(1);
+    expect(userNames).toContain("Jarib");
   });
-  it("saves long usernames", () => {
-    nameInput;
-  });
+});
+afterEach(function () {
+  nameInput.value = "";
+  userNames = [];
 });
