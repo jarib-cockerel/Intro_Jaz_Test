@@ -68,4 +68,4 @@ describe("subform() test", () => {
 afterEach(function () {
   nameInput.value = "";
   userNames = [];
-});
+}); //resets so the input remains 1 but if afterEach was removed, then an error would pop up
